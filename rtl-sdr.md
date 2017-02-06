@@ -31,7 +31,7 @@ $ sudo ldconfig
 $ cd ../..
 ```
 
-If you wish to run the `rtl-sdr` tools with a non-root account, you will need to give these accounts permission to access the RTL-SDR USB device.  This is done by adding a "rules" file to the `udev` (device manager).
+If you wish to run the `rtl-sdr` tools with a non-root account, you will need to give these accounts permission to access the RTL-SDR USB device.  This is done by adding a "rules" file to the `udev` (device manager). See [this reference](https://www.reddit.com/r/RTLSDR/wiki/blacklist_dvb_usb_rtl28xxu).
 
 Luckily, the `rtl-sdr` project comes with the rules file, we just need to copy it to the right place.
 
