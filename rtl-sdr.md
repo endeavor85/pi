@@ -75,7 +75,7 @@ User cancel, exiting...
 Samples per million lost (minimum): 0
 ```
 
-Try some FM radio!
+### Try some FM radio!
 
 The Pi should automatically choose the audio output device, but sometimes it doesn't.  I was using HDMI output to a TV and had to force the Pi to use the HDMI audio output. See the [official instructions](https://www.raspberrypi.org/documentation/configuration/audio-config.md).
 
@@ -84,4 +84,10 @@ The Pi should automatically choose the audio output device, but sometimes it doe
 # 1 = 3.5mm headphone jack
 # 2 = HDMI
 $ amixer cset numid=3 2
+```
+
+Now pick a local FM station and tune in.  Set your station frequency after the `-f` switch.
+
+```sh
+$ rtl_fm -f 99.5e6 -M wbfm -s 200000 -r 48000 - | aplay -r 48k -f S16_LE
 ```
