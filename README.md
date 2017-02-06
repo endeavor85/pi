@@ -11,3 +11,7 @@ Raspberry Pi Projects
 ## Java Libraries
 
 - [Pi4J](http://pi4j.com/)
+
+## RTL-SDR
+
+- [RTL-SDR Airband](https://github.com/szpajder/RTLSDR-Airband)
